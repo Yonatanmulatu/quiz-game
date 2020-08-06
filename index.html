@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>First Trial Game</title>
+</head>
+<body>
+
+  <div class="container hide">
+    <div id="question-container">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+
+      <audio id="correctAnswer">
+        <source src="correctAnswer.m4a" type="audio/mp4">
+      </audio>
+      <audio id="incorrectAnswer">
+        <source src="incorrectAnswer.m4a" type="audio/mp4">
+      </audio>
+    </div>
+    <div id="timer">
+      <div id="counter"></div>
+      <div id="btimeGauge"></div> 
+      <div id="timeGauge"></div>
+    </div>
+    <div id="progress"></div>
+  </div>
+
+  <div id="scoreContainer" style="display: none"></div>
+
+  <video id="logo" autoplay muted src="clap.main.logo.mp4" width="100%"></video> 
+  <div class="controls">
+    <button id="start-btn" class="start-btn btn">Start the quiz</button>
+    <button id="next-btn" class="next-btn btn hide">Next</button>
+  </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
